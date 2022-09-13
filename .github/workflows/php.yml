@@ -38,7 +38,7 @@ jobs:
         run: composer install --prefer-dist --no-progress
 
       - name: PHPUnit
-        run: php vendor/bin/phpunit --coverage-clover clover.xml
+        run: composer run test
 
 
       - name: Publish code coverage
